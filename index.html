@@ -181,6 +181,19 @@
   }
   .tag:hover { border-color: var(--accent); color: var(--accent); }
 
+  /* ---------- SIDE PROJECTS ---------- */
+  .project { padding: 1.8rem 0; border-top: 1px solid var(--hair); }
+  .project:first-of-type { border-top: none; padding-top: 0; }
+  .project-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem 1rem; }
+  .project-title { font-family: var(--display); font-weight: 500; font-size: 1.12rem; }
+  .status {
+    font-family: var(--mono); font-size: .64rem; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--accent); border: 1px solid var(--accent); border-radius: 2px; padding: .18rem .5rem;
+  }
+  .project-meta { font-family: var(--mono); font-size: .74rem; color: var(--muted); margin-top: .35rem; }
+  .project p { color: var(--muted); font-size: .98rem; margin-top: 1rem; max-width: 60ch; }
+  .project p b { color: var(--ink); font-weight: 600; }
+
   /* ---------- FORMATION + LANG ---------- */
   .two-col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; }
   .row { padding: 1rem 0; border-top: 1px solid var(--hair); display: flex; justify-content: space-between; gap: 1rem; }
@@ -391,9 +404,30 @@
     </div>
   </section>
 
-  <section id="formation">
+  <section id="projets">
     <div class="sec-head">
       <span class="idx">03</span>
+      <h2>Side projects</h2>
+      <span class="line"></span>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <span class="project-title">Magic: The Gathering — Manabase</span>
+        <span class="status">Bientôt en ligne</span>
+      </div>
+      <div class="project-meta">Laravel · Vue.js · Créateur</div>
+      <p>
+        Application web de <b>calcul de manabase</b> et de <b>génération de deck spec</b> :
+        analyse des coûts de mana, répartition optimale des terrains et proposition d'une liste
+        de deck cohérente.
+      </p>
+    </div>
+  </section>
+
+  <section id="formation">
+    <div class="sec-head">
+      <span class="idx">04</span>
       <h2>Formation &amp; langues</h2>
       <span class="line"></span>
     </div>
